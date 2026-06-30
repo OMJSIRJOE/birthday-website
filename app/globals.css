@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/animations.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-luxury-black text-white antialiased overflow-x-hidden;
+  }
+
+  @media (pointer: fine) {
+    body {
+      cursor: none;
+    }
+  }
+
+  ::selection {
+    @apply bg-luxury-gold/30 text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl border border-luxury-gold/20 bg-white/5 backdrop-blur-xl shadow-luxury;
+  }
+
+  .gold-button {
+    @apply relative overflow-hidden rounded-full border border-luxury-gold/50 bg-gradient-to-r from-luxury-gold-dark via-luxury-gold to-luxury-gold-light px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] text-luxury-black transition-all duration-500 hover:scale-105 hover:shadow-gold-lg active:scale-95;
+  }
+
+  .gold-button::before {
+    content: "";
+    @apply absolute inset-0 -translate-x-full bg-gold-shimmer bg-[length:200%_100%] transition-transform duration-700;
+  }
+
+  .gold-button:hover::before {
+    @apply translate-x-full;
+  }
+
+  .gold-text-gradient {
+    @apply bg-gradient-to-r from-luxury-gold-light via-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
+  }
+
+  .luxury-heading {
+    @apply font-display text-4xl font-light tracking-wide sm:text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  .luxury-subheading {
+    @apply font-display text-xl font-light italic tracking-wider text-luxury-gold/90 sm:text-2xl md:text-3xl;
+  }
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+}

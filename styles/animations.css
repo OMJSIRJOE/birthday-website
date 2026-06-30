@@ -1,0 +1,79 @@
+@keyframes goldGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+  }
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.15);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes roseFall {
+  0% {
+    transform: translateY(-5vh) rotate(0deg) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(720deg) translateX(50px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes starTwinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.gold-glow {
+  animation: goldGlow 3s ease-in-out infinite;
+}
+
+.heart-beat {
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+.rose-petal {
+  animation: roseFall linear infinite;
+}
+
+.star-twinkle {
+  animation: starTwinkle 3s ease-in-out infinite;
+}
