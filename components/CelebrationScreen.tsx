@@ -65,7 +65,7 @@ export default function CelebrationScreen({ onUnlock }: CelebrationScreenProps) 
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Now enjoy the beautiful memories we&apos;ve shared together.
+          Now let&apos;s take a look back at some of the beautiful memories.
         </motion.p>
 
         <motion.div
