@@ -88,14 +88,13 @@ export default function Quiz({ onComplete }: QuizProps) {
                     transition={{ delay: index * 0.1 }}
                     onClick={() => handleSelect(option)}
                     disabled={isTransitioning}
-                    whileHover={!isTransitioning ? { scale: 1.02, x: 4 } : undefined}
                     whileTap={!isTransitioning ? { scale: 0.98 } : undefined}
-                    className={`w-full rounded-xl border px-6 py-4 text-left font-body text-sm transition-all duration-300 sm:text-base ${
+                    className={`w-full touch-manipulation rounded-xl border px-6 py-4 text-left font-body text-sm outline-none transition-all duration-300 focus:outline-none focus-visible:outline-none sm:text-base ${
                       showResult && isSelected && isCorrect
                         ? "border-luxury-gold bg-luxury-gold/20 text-luxury-gold shadow-gold"
                         : showResult && isSelected && !isCorrect
                           ? "border-red-500/50 bg-red-500/10 text-red-300"
-                          : "border-white/10 bg-white/5 text-white/90 hover:border-luxury-gold/40 hover:bg-luxury-gold/10 hover:shadow-gold"
+                          : "border-white/10 bg-white/5 text-white/90 [@media(hover:hover)_and_(pointer:fine)]:hover:border-luxury-gold/30 [@media(hover:hover)_and_(pointer:fine)]:hover:bg-luxury-gold/5"
                     }`}
                   >
                     <span className="mr-3 text-luxury-gold/60">
