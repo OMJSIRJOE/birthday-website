@@ -82,7 +82,7 @@ export default function SurprisePage({ onContinue }: SurprisePageProps) {
             className="flex items-center justify-center gap-3 sm:px-10"
           >
             <FaSpotify size={22} />
-            Play Our Favourite Songs
+            Play Your Favourite Songs
           </GoldButton>
 
           {!hasPlaylist && (
