@@ -147,7 +147,7 @@ export default function VideoMemoriesPage({ onContinue }: VideoMemoriesPageProps
         animate={{ opacity: 1, y: 0 }}
       >
         <Film className="text-luxury-gold" size={28} />
-        <h2 className="luxury-heading gold-text-gradient">Our Video Memories</h2>
+        <h2 className="luxury-heading gold-text-gradient">Video Memories</h2>
       </motion.div>
 
       <motion.p
@@ -156,7 +156,7 @@ export default function VideoMemoriesPage({ onContinue }: VideoMemoriesPageProps
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        A cinematic slideshow of our most precious moments
+        A cinematic journey through how much you&apos;ve grown
       </motion.p>
 
       {loading ? (
