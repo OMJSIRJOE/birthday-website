@@ -8,7 +8,7 @@ export const PERSONAL = {
   herName: "Chidinma",
 
   /** Your name — used on the letter sign-off and final page */
-  yourName: "Joshua",
+  yourName: "JOENANA",
 
   /** Spotify playlist — opens when she taps "Play Our Favourite Songs" */
   spotifyPlaylistUrl:
@@ -33,5 +33,5 @@ You are my POM — my peace of mind, my joy, my everything. The love I have for 
 Thank you for being you. Thank you for choosing me. Thank you for making every ordinary day feel extraordinary.
 
 With all my heart,
-joenana ❤️`,
+JOENANA ❤️`,
 } as const;
