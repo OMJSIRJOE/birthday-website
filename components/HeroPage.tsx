@@ -54,7 +54,7 @@ export default function HeroPage({ onBegin }: HeroPageProps) {
             transition={{ delay: 0.8, duration: 0.8 }}
           >
             <GoldButton onClick={onBegin} className="text-base sm:px-12 sm:py-5">
-              Begin Our Journey
+              Let the Journey Begin
             </GoldButton>
           </motion.div>
         </motion.div>
